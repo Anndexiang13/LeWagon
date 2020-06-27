@@ -1,0 +1,39 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:300,400,500,700");
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lobster&family=Lobster+Two:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Playfair+Display:ital,wght@0,400;1,600&display=swap');
+
+body {
+  background-color: #FFEECB;
+  color: #5E7CE2;
+  font-family: 'Inconsolata', serif;
+  line-height: 1.6;
+  font-weight: 700;
+  font-size: 18px
+}
+
+p {
+  color: #00CC99;
+  font-family: 'Playfair', monospace;
+  font-style: italic;
+  font-weight: 400;
+}
+
+h1{
+  font-family: 'Lobster', serif;
+ }
+h2 {
+  font-family: 'Lobster', sans-serif;
+  color: #EB4511;
+}
+
+a{
+  font-style: italic;
+  font-weight: 900;
+  font-family: 'Poppins',sans-serif;
+}
+
+a:hover {
+  color:red;
+}
+
+

@@ -1,0 +1,103 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:300,400,500,700");
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lobster&family=Lobster+Two:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Playfair+Display:ital,wght@0,400;1,600&display=swap');
+
+body {
+  background-color: rgba(255, 238, 203, 0.49);
+  color: #5E7CE2;
+  font-family: 'Inconsolata', serif;
+  line-height: 1.6;
+  font-weight: 700;
+  font-size: 18px
+}
+
+p {
+  color: #00CC99;
+  font-family: 'Playfair', monospace;
+  font-style: italic;
+  font-weight: 400;
+}
+
+h1{
+  font-family: 'Lobster', serif;
+ }
+h2 {
+  font-family: 'Lobster', sans-serif;
+  color: #EB4511;
+}
+
+a{
+  font-style: italic;
+  font-weight: 900;
+  font-family: 'Poppins',sans-serif;
+  text-decoration: none;
+}
+
+a:hover {
+  color:red;
+}
+
+.container {
+  width: 750px;
+  margin: 0 auto;
+
+}
+
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+.card-white {
+  background-color: #F5F5F5;
+  padding: 40px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  border-radius: 18px;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.btn-blue {
+  background-color: #6B72E1;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+.btn-blue:hover {
+  background-color: black;
+  color: #EE6352;
+}
+
+
+.list-inline li {
+  display: inline;
+  padding: 5px;
+  margin: 0 auto;
+}
+.list-inline i {
+  font-size: 50px;
+  color: rgb(150, 150, 150);
+}
+.list-inline i:hover {
+  color: black;
+}
+
