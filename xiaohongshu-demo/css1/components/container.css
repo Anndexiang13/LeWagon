@@ -1,0 +1,164 @@
+.container {
+  padding: 0 160px;
+}
+
+/*Doing card 1*/
+.card-1 {
+  border-radius: 44px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 30px;
+}
+
+.card-1 h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  font-family: inherit;
+}
+
+.card-1 img {
+  width: 100%;
+}
+
+.card-1 p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-1 .card-1-info {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  align-items: center
+}
+
+/*Doing card 2*/
+
+.card-2 {
+  border-radius: 44px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 30px;
+}
+
+.card-2 h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  font-family: inherit;
+}
+
+.card-2 img {
+  width: 100%;
+}
+
+.card-2 p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-2 .card-2-info {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  align-items: center
+}
+
+
+/*Doing card 3*/
+
+.card-3 {
+  border-radius: 44px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 30px;
+}
+
+.card-3 h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  font-family: inherit;
+}
+
+.card-3 img {
+  width: 100%;
+}
+
+.card-3 p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-3 .card-3-info {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  align-items: center
+}
+
+/* Box-sizing reset: //w3bits.com/?p=3225 */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* The Masonry Container */
+.masonry {
+  margin: 1.5em auto;
+  max-width: 768px;
+  column-gap: 1em;
+  column-count: 3;
+}
+
+/* The Masonry Brick */
+.item {
+  background: #fff;
+  padding: 1em;
+  margin: 0 0 1.5em;
+}
+
+
+
+
+
+/*responsive*/
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+
