@@ -30,3 +30,35 @@
   object-fit: cover;
   border: black 1px solid;
 }
+
+
+.card-4-votes img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  border-radius:50%;
+  object-fit: cover;
+  border: black 1px solid;
+}
+
+
+.card-5-votes img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  border-radius:50%;
+  object-fit: cover;
+  border: black 1px solid;
+}
+
+.card-6-votes img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  border-radius:50%;
+  object-fit: cover;
+  border: black 1px solid;
+}

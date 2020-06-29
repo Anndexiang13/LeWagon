@@ -1,6 +1,6 @@
 /* --- Font imports --- */
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:400,700");
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Lobster&family=Lobster+Two:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Playfair+Display:ital,wght@0,400;1,600&display=swap');
 /* --- Component imports --- */
 @import url("components/container.css");
 @import url("components/avatar.css");
@@ -16,4 +16,27 @@ h1, h2, h3 {
 }
 
 
+img {
+  border-radius: 30px
+}
 
+h1 {
+  background-color: white;
+  font-family: "Lobster", "Helvetica", "sans-serif";
+  color: black;
+}
+
+.header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.header h1, h2 {
+  margin: 0 auto;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-around;
+}
