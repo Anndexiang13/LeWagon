@@ -40,5 +40,12 @@
   background: #ebf4ee;
   text-decoration: none;
   color: black;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.btns {
+  display: flex;
+  margin: 0 100px;
+  justify-content: space-around;
 }
 
