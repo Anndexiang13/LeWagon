@@ -3,17 +3,28 @@ sumOfNegative = (numbers) => {
 }
 
 
+const myArray2 = [0, -1, 3, -2, 4],
+negative = myArray2.filter(function(a)
+  {return a < 0; }),
+sum = negative.reduce(function(a,b)
+  {return a + b;});
+console.log(sum);
 
 
 
 
-sumOfNegative = numbers => { sumOfNegative.forEach(sumOfNegative)<0+sumOfNegative.forEach(sumOfNegative)<0
 
 
-const beatles = ["paul", "john", "ringo", "george"];
-beatles.forEach((beatle) => {
-  console.log(beatle.toUpperCase());
-});
 
 
-if (num<0) + ()
+
+
+
+
+
+
+
+
+
+
+
