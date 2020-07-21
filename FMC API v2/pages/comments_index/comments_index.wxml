@@ -1,0 +1,13 @@
+<!--pages/comments_index/comments_index.wxml-->
+<!-- <text>pages/comments_index/comments_index.wxml</text> -->
+<view wx:for="{{comments}}" wx:for-item="comment">
+  <view> {{comment.content}}
+   <view data-id="{{comment.id}}" bindtap="deleteComment" > x </view>
+  </view>
+  
+  <!-- other comment fields -->
+    <view data-id="{{comment.id}}" data-votes="{{comment.votes}}" bindtap="voteComment" > votes: {{comment.votes}} </view>
+
+    <!-- to devote -->
+    <view data-id="{{comment.id}}" data-votes="{{comment.votes}}" bindtap="deVote" > devote</view>
+</view>

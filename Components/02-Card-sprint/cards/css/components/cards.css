@@ -1,1 +1,94 @@
 /* Your card CSS file */
+
+.card-category {
+background-size: cover;
+background-position: center;
+height: 270px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #FFFF;
+text-shadow: 1px 1px 20px rgba(0,0,0,0.2);
+border-radius: 15px;
+box-shadow: 0 0 15px rgba(0,0,0,0.2);
+font-weight: bold;
+font-size: 30;
+}
+
+
+.card-product {
+background-size: cover;
+background-position: center;
+height: 170px;
+align-items: center;
+box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 16px;
+  display: flex;
+  /*justify-content: space-between;*/
+  align-items: flex-end;
+  position: relative;
+  align-items: center
+}
+
+.card-product img {
+height: 170px;
+width: 170px;
+object-fit: cover;
+display: flex;
+}
+
+.card-product h2 {
+font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  font-family: inherit;
+}
+
+car.product p{
+   font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-product-info {
+  padding: inherit;
+}
+
+.card-trip {
+background-size: cover;
+background-position: center;
+align-items: center;
+box-shadow: 0 0 15px rgba(0,0,0,0.2);
+padding: 16px;
+position: relative;
+align-items: center
+overflow: hidden;
+}
+
+.card-trip img {
+  width: 100%;
+}
+
+/*.card-1 h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  font-family: inherit;
+}
+
+
+
+.card-1 p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+.card-1 .card-1-info {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  align-items: center
+}*/
