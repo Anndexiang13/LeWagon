@@ -3,7 +3,7 @@
 
 /* Importing all components file */
 @import url("components/cards.css");
-
+@import url("components/avatar.css");
 /* General for fonts and colors */
 body {
   margin: 100px;
