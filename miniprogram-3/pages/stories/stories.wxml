@@ -1,17 +1,27 @@
 <!--pages/stories/stories.wxml-->
-<view class="banner" style="padding:20px 0px; height: 100px; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/background.png);">
-    <view class="h1">F*** my code</view>
+<view class="banner" style="padding:20px 0px; height: 100px; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.marketingtochina.com/wp-content/uploads/2016/12/toutiao.png);">
+    <!-- <view class="h1">F*** my code</view> -->
     <view class="p">{{tagline}}</view>
 </view>
 
 <!-- FMC STORY -->
 
-<view class="card-product">
+<view wx:for="{{stories}}" class="card-product">
   <view class="card-product-infos">
-    <view class="h2">{{content}}</view>
-    <view class="p">{{name}}</view>
+    <view class="h2">{{item.content}}</view>
+    <view class="p">{{item.name}}</view>
+    <!-- <button class="btn" bindtap="switchToPosts">Share your first FMC story</button> -->
   </view>
 </view>
 
 <!-- stories.wxml -->
+ <button class="btn" bindtap="clickMe">{{text}}</button>
 
+<!-- USING WX:IF CONDITION IN CASE WE HAVE NOTHING TO SHOW -->
+
+<!-- <view class="card-product" wx:if="{{stories.length==0}}">
+  <view class="card-product-infos">
+    <view class="h2">There's nothing here yet!</view>
+    <button class="btn" bindtap="switchToPosts">Share your first FMC story</button>
+  </view>
+</view> -->

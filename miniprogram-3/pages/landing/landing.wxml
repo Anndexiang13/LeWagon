@@ -3,8 +3,12 @@
   <view class="container">
     <view class="h1">{{title}}</view>
     <view class="p">{{description}}</view>
-    <navigator class="btn btn-flat" url="/pages/stories/stories">
+    <!-- <navigator class="btn btn-flat" url="/pages/stories/stories">
       {{cta}}
-    </navigator>
+    </navigator> -->
+    <!-- change navigator to button -->
+    <button class="btn btn-flat" bindtap="goToStories">
+    {{cta}} 
+    </button>
   </view>
 </view>

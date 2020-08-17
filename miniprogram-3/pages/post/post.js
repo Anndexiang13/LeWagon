@@ -1,4 +1,5 @@
 // pages/post/post.js
+let app=getApp
 Page({
 
   /**

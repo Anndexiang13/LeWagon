@@ -1,21 +1,43 @@
 // pages/stories/stories.js
+let app = getApp()
 Page({
 
   /**
    * Page initial data
    */
   data: {
-    content: "FMC!!!",
-    name: "Yinghui",
-    tagline: "Bugs everywhere!"
+    stories : []
+    // content: "FMC!!!",
+    // name: "Yinghui",
+    // tagline: "Bugs everywhere!"
   },
 
+  clickMe: function() {
+    this.setData({ text: "Share my first FMC story" })
+    wx.navigateTo({
+      url: '/pages/post/post',
+      success: function(res) {},
+      fail: function(res) {},
+      complete: function(res) {},
+    })
+  },
   
+  // switchToPost: function() {
+  // wx.switchTab({
+  //   url: '/pages/post/post',
+  //   success: function(res) {},
+  //   fail: function(res) {},
+  //   complete: function(res) {},
+  // })
+
+  // },
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+  this.setData({
+    stories: app.globalData.stories
+  })  
   },
 
   /**
@@ -29,7 +51,12 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
+    // let stories = wx.getStorageSync("stories") || []
+    // console.log(stories)
 
+    // this.setData({
+    //   stories: stories
+    // })
   },
 
   /**

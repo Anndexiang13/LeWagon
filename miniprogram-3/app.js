@@ -2,6 +2,11 @@
 App({
   onLaunch: function () {
     // 展示本地存储能力
+    require('./sdk-wechat.3.12.0');
+    let clientID='88e9e871ca4f9e06adf9';  
+    wx.BaaS.init(clientID);
+    console.log('App loaded.');
+    
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
@@ -34,6 +39,13 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    tagline: "bugs everywhere",
+    userId: "",
+    language: "EN",
+    stories: [
+      { content: "OMG!!", name: "Yinghui" },
+      { content: "Are you sure?", name: "Sophia" },
+      { content: "Unexpected!", name: "Robin" }
+    ]
   }
 })

@@ -9,6 +9,13 @@ Page({
     cta: "Start here"
 
   },
+ 
+  goToStories: function() {
+    wx.navigateTo({
+      url: '/pages/stories/stories'
+    })
+  },
+
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
