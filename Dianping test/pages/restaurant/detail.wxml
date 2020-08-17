@@ -1,0 +1,51 @@
+<!--pages/restaurant/detail.wxml-->
+
+<view class="banner" style="padding:20px 0px; height: 100px; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(http://img.timeoutshanghai.com/201711/20171115050859489.jpg);">
+    <view class="h1">Fan-GuanG</view>
+    <view class="p">{{tagline}}</view>
+</view>
+
+<view class="name">Your Order:</view>
+<view class="card-product">
+  <view class="meals">
+    <view class="meal" wx:for="{{meals}}" wx:for-item="meal">
+      <view class="left">
+        <view class="name">{{meal.name}}</view>
+      </view>
+      <view class="right">
+       <view class="price">{{meal.price}}元</view>
+      <button size="mini" data-id="{{meal.id}}" data-points="{{meal.points}}" type="primary" bindtap="createOrder">Order</button>
+      </view>
+    </view>  
+  </view>  
+</view>
+
+<view class="title-box">
+  <view class="name">{{restaurant.name}} Review</view>
+  <!-- <view class="desc">{{restaurant.description}}</view> -->
+</view>
+<view wx:for="{{reviews}}" wx:for-item="review" class="card-product" wx:key="id" data-id="{{review.id}}"> 
+  <view class="card-product-infos">
+    <view class="h2">{{review.content}}</view>
+    <view class="p">{{review.rating}}</view>
+  </view>
+ </view>
+ 
+ <form bindsubmit="createReview" wx:if="{{currentUser}}"> 
+    <view class="review-input">
+      <input class="add-movie" name="content" placeholder="Input your comment..." />
+      <picker class="add-movie" mode="selector" range="{{ratings}}" onchange="onRate">
+        Restaurant Rating: {{rating}}
+      </picker>
+    </view>
+    <view class="submit-button">
+    <button type="primary" form-type="submit">Add Review</button>
+    </view>
+  </form> 
+  <view wx:else>
+  <button type="primary" open-type="getUserInfo" bindgetuserinfo="userInfoHandler">Login to Review</button>
+</view>
+
+
+
+
