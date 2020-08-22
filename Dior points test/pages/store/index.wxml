@@ -1,0 +1,13 @@
+<!--pages/restaurant/index.wxml-->
+<view class="banner" style="padding:20px 0px; height: 100px; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://i03piccdn.sogoucdn.com/85458d28c585f92a);">
+    <view class="h2"></view>
+    <view class="p">{{tagline}}</view>
+</view>
+
+<view bindtap="goToDetail" wx:for="{{diorstores}}" wx:for-item="diorStore" class="card-product" wx:key="id" data-id="{{diorstore.id}}">
+  <view class="card-product-infos">
+    <view class="h2">{{diorStore.name}}</view>
+    <view class="p">{{diorStore.location}}</view>
+    <!-- <image src="{{restaurant.photo}}"/>  --> 
+  </view>
+</view>

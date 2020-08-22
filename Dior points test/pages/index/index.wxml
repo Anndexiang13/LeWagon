@@ -1,0 +1,13 @@
+<!--pages/index/index.wxml-->
+<view class="banner" style="padding-top:10px; height: 75vh; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://media.dior.cn/img/zh_cn/sku/couture/M1272ZBBF_M941_TU?imwidth=460);">
+  <view class="container">
+    <view class="h1">{{title}}</view>
+    <view class="p">{{description}}</view>
+    <!-- <button class="btn btn-flat" bindtap="goToRestaurant">
+      {{cta}}
+    </button> -->
+  </view>
+</view>
+
+
+

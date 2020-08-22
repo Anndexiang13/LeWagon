@@ -1,0 +1,37 @@
+<!--pages/restaurant/detail.wxml-->
+
+<view class="banner" style="padding:20px 0px; height: 100px; background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://media.dior.cn/img/zh_cn/sku/couture/M1272ZBBF_M941_TU?imwidth=460);">
+    <view class="h1">DIOR STORE</view>
+    <view class="p">{{tagline}}</view>
+</view>
+
+<view class="title-box">
+  <view class="name">{{diorStore.name}} Review</view>
+  <!-- <view class="desc">{{restaurant.description}}</view> -->
+</view>
+
+<view wx:for="{{reviews}}" wx:for-item="review" class="card-product" wx:key="id" data-id="{{review.id}}"> 
+  <view class="card-product-infos">
+    <view class="h2">{{review.content}}</view>
+    <view class="p">{{review.rating}}</view>
+  </view>
+ </view>
+ 
+ <form bindsubmit="createReview" wx:if="{{currentUser}}"> 
+    <view class="review-input">
+      <input class="add-movie" name="content" placeholder="Input your comment..." />
+      <picker class="add-movie" mode="selector" range="{{ratings}}" onchange="onRate">
+        Rating: {{rating}}
+      </picker>
+    </view>
+    <view class="submit-button">
+    <button type="primary" form-type="submit">Add Review</button>
+    </view>
+  </form> 
+  <view wx:else>
+  <button type="primary" open-type="getUserInfo" bindgetuserinfo="userInfoHandler">Login to Review</button>
+</view>
+
+
+
+

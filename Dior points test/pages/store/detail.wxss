@@ -1,0 +1,61 @@
+/* pages/restaurant/detail.wxss */
+
+.card-product {
+  overflow: hidden;
+  height: 100px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  /* display: flex; */
+  align-items: center;
+  margin: 1em;
+}
+
+.card-product-infos image {
+  height: 120px;
+  width: 100px;
+  object-fit: contain;
+  }
+
+.h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card-product .card-product-infos {
+  padding: 16px;
+}
+
+.add-movie {
+  width: 80%;
+  margin: 50rpx 35rpx;
+  background: white;
+  padding: 25rpx;
+  width: 80%;
+  box-shadow: 5px 5px 5px 0px rgb(78, 74, 74);
+  color: black;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.desc {
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+  margin-left: 5mm;
+}

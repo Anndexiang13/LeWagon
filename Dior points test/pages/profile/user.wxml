@@ -1,0 +1,18 @@
+<!--pages/profile/user.wxml-->
+<text style="font-size: 36rpx;"> PROFILE</text>
+<view wx:if="{{!currentUser}}" class="login">
+<button type="primary" open-type="getUserInfo" bindgetuserinfo="userInfoHandler">LOGIN</button>
+</view>
+
+<view wx:else class="logged-in" style="width: 100%; margin-top: 25rpx; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+  <view class="name" style="font-weight: bold; font-size: 56rpx;">
+  Welcome, {{currentUser.nickname}}!
+  </view>
+  <view class="avatar" style="margin-top: 25rpx;">
+    <image style="width: 200rpx; height: 200rpx; border-radius: 50%;" src="{{currentUser.avatar}}" />
+  </view>
+</view>
+
+<!-- <button class="btn btn-flat" bindtap="goToStore">
+      {{cta}}
+    </button> -->

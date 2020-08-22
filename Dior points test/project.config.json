@@ -5,35 +5,35 @@
 	},
 	"setting": {
 		"urlCheck": false,
-		"scopeDataCheck": false,
-		"coverView": true,
 		"es6": true,
+		"enhance": false,
 		"postcss": true,
-		"compileHotReLoad": false,
 		"preloadBackgroundData": false,
 		"minified": true,
-		"autoAudits": false,
 		"newFeature": false,
-		"uglifyFileName": false,
-		"uploadWithSourceMap": true,
-		"useIsolateContext": true,
+		"coverView": true,
 		"nodeModules": false,
-		"enhance": false,
-		"useCompilerModule": true,
-		"userConfirmedUseCompilerModuleSwitch": false,
+		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
 		"babelSetting": {
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-		}
+		},
+		"useIsolateContext": true,
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.11.3",
-	"appid": "wxf5c8c5e064b9065d",
-	"projectname": "FMC",
+	"libVersion": "2.12.0",
+	"appid": "wxe99b4ce2aa8328c1",
+	"projectname": "miniprogram-1dianping",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -67,51 +67,36 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "Landing",
-					"pathName": "pages/landing/landing",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "Stories",
-					"pathName": "pages/stories/stories",
-					"query": "name=sdsf",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "Post",
-					"pathName": "pages/post/post",
-					"query": "name=sdsf",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "Index",
+					"name": "pages/index/index",
 					"pathName": "pages/index/index",
 					"query": "",
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "show",
-					"pathName": "pages/show/show",
+					"id": 1,
+					"name": "store_index",
+					"pathName": "pages/store/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "rdetail",
+					"pathName": "pages/restaurant/detail",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "comment_index",
-					"pathName": "pages/comments_index/comments_index",
+					"name": "userprofile",
+					"pathName": "pages/profile/user",
 					"query": "",
 					"scene": null
 				},
 				{
 					"id": -1,
-					"name": "new",
-					"pathName": "pages/new/new",
-					"query": "",
+					"name": "store detail",
+					"pathName": "pages/store/detail",
 					"scene": null
 				}
 			]
